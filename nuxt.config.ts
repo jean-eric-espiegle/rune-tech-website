@@ -5,6 +5,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    public: {
+      // AdminDash's one public (unauthenticated) endpoint — see its
+      // server/api/public/inquiries.ts. Overridable at build time via
+      // NUXT_PUBLIC_INQUIRY_ENDPOINT (a Netlify build env var) without a
+      // code change, e.g. if AdminDash ever moves off this Fly URL.
+      inquiryEndpoint: 'https://admindash.fly.dev/api/public/inquiries'
+    }
+  },
+
   app: {
     head: {
       htmlAttrs: { lang: 'en' },

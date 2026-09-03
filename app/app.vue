@@ -28,12 +28,26 @@ async function submitInquiry(event: Event) {
   event.preventDefault()
   const form = event.target as HTMLFormElement
   const data = new FormData(form)
+
+  // Honeypot: a real visitor never fills this in (it's visually hidden).
+  // A bot that fills every field will — so just pretend to succeed rather
+  // than telling it what tripped the check.
+  if (data.get('bot-field')) {
+    formStatus.value = 'sent'
+    formNote.value = 'Thanks — we’ll be in touch soon.'
+    form.reset()
+    return
+  }
+
   formStatus.value = 'sending'
   try {
-    await $fetch('/', {
+    await $fetch(useRuntimeConfig().public.inquiryEndpoint, {
       method: 'POST',
-      body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      body: {
+        name: data.get('name'),
+        email: data.get('email'),
+        message: data.get('message')
+      }
     })
     formStatus.value = 'sent'
     formNote.value = 'Thanks — we’ll be in touch soon.'
