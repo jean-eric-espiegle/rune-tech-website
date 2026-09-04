@@ -11,9 +11,9 @@
   Paid tiers: Starter $9/mo (2,000 ops), Pro $29/mo (10,000 ops), Scale $99/mo (50,000
   ops); overage on any paid tier bills at $0.002/operation.
 - [Image Optimization API](https://image-optimization-api.fly.dev): Resize, convert,
-  compress, and smart-crop images behind one clean REST API. Free tier is 500MB
-  processed/month, no card required. Paid tiers: Starter $9/mo (5,000MB), Pro $29/mo
-  (25,000MB), Scale $99/mo (100,000MB); overage on any paid tier bills at $0.005/MB.
+  compress, and smart-crop images behind one clean REST API. Free tier is 100MB
+  processed/month, no card required. Paid tiers: Starter $9/mo (250MB), Pro $29/mo
+  (500MB), VIP $99/mo (unlimited); Starter and Pro bill overage at $0.01/MB.
 
 ## Pages
 

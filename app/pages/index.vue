@@ -52,10 +52,10 @@ useHead({
             operatingSystem: 'Any',
             description: 'Resize, convert, compress, and smart-crop images behind one clean REST API. Billed by MB processed, a generous free tier, four endpoints that do exactly what they say.',
             offers: [
-              { '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD', description: '500MB processed/month, no card required.' },
-              { '@type': 'Offer', name: 'Starter', price: '9', priceCurrency: 'USD', description: '5,000MB processed/month, then $0.005/MB.' },
-              { '@type': 'Offer', name: 'Pro', price: '29', priceCurrency: 'USD', description: '25,000MB processed/month, then $0.005/MB.' },
-              { '@type': 'Offer', name: 'Scale', price: '99', priceCurrency: 'USD', description: '100,000MB processed/month, then $0.005/MB.' }
+              { '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD', description: '100MB processed/month, no card required.' },
+              { '@type': 'Offer', name: 'Starter', price: '9', priceCurrency: 'USD', description: '250MB processed/month, then $0.01/MB.' },
+              { '@type': 'Offer', name: 'Pro', price: '29', priceCurrency: 'USD', description: '500MB processed/month, then $0.01/MB.' },
+              { '@type': 'Offer', name: 'VIP', price: '99', priceCurrency: 'USD', description: 'Unlimited processing/month.' }
             ],
             provider: { '@id': `${siteUrl}/#organization` }
           },
@@ -213,7 +213,7 @@ async function submitInquiry(event: Event) {
             <h3>Image Optimization API</h3>
           </div>
           <p>Resize, convert, compress, and smart-crop images behind one clean REST API. Billed by MB processed, not a confusing credit system.</p>
-          <p class="tablet-pricing">Free: 500MB/mo, no card &middot; Starter $9/mo &middot; Pro $29/mo &middot; Scale $99/mo</p>
+          <p class="tablet-pricing">Free: 100MB/mo, no card &middot; Starter $9/mo &middot; Pro $29/mo &middot; VIP $99/mo unlimited</p>
           <pre class="code-sample"><code>curl -X POST https://image-optimization-api.fly.dev/v1/resize \
   -H "x-api-key: YOUR_KEY" \
   -F "file=@photo.jpg" -F "width=800"</code></pre>
