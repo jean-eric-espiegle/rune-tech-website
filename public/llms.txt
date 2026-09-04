@@ -1,0 +1,23 @@
+# Rune Tech
+
+> Rune Tech builds focused, single-purpose software — APIs and utilities cut clean enough
+> to trust on day one. No sprawl, no bloat: each product does one thing, built to outlast
+> the trend that inspired it. Built and run by one person, Jean-Eric Espiegle.
+
+## Products
+
+- [PDF Toolkit API](https://pdf-toolkit-api.fly.dev): Merge, split, compress, and rasterize
+  PDFs behind one clean REST API. Free tier is 100 operations/month, no card required.
+  Paid tiers: Starter $9/mo (2,000 ops), Pro $29/mo (10,000 ops), Scale $99/mo (50,000
+  ops); overage on any paid tier bills at $0.002/operation.
+
+## Pages
+
+- [Homepage](https://rune-tech.org/): product listing, FAQ, and inquiry form
+- [About](https://rune-tech.org/about): who builds Rune Tech and why
+- [Changelog](https://rune-tech.org/changelog): what has shipped, in order
+- [Privacy Policy](https://rune-tech.org/privacy): what data is collected and how it's used
+
+## Contact
+
+Inquiries: https://rune-tech.org/#inquiry or inquiries@rune-tech.org

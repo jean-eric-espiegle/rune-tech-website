@@ -1,0 +1,16 @@
+{
+  "name": "Rune Tech",
+  "short_name": "Rune Tech",
+  "description": "An arcane workshop for software. Small tools, deliberately built.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E0F1C",
+  "theme_color": "#A8792E",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

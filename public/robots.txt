@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow:
+
+Sitemap: https://rune-tech.org/sitemap.xml
