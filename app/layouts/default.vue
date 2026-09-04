@@ -50,6 +50,7 @@ function toggleTheme() {
         <a href="mailto:inquiries@rune-tech.org">inquiries@rune-tech.org</a>
         <a href="https://github.com/jean-eric-espiegle/rune-tech-website" target="_blank" rel="noopener">GitHub</a>
         <NuxtLink to="/changelog">Changelog</NuxtLink>
+        <NuxtLink to="/terms">Terms</NuxtLink>
         <NuxtLink to="/privacy">Privacy</NuxtLink>
       </div>
       <p class="fine">&copy; 2026 Rune Tech. Small tools, deliberately built.</p>

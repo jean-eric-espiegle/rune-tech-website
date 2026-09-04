@@ -20,6 +20,7 @@
 - [Homepage](https://rune-tech.org/): product listing, FAQ, and inquiry form
 - [About](https://rune-tech.org/about): who builds Rune Tech and why
 - [Changelog](https://rune-tech.org/changelog): what has shipped, in order
+- [Terms of Service](https://rune-tech.org/terms): terms for using this site
 - [Privacy Policy](https://rune-tech.org/privacy): what data is collected and how it's used
 
 ## Contact

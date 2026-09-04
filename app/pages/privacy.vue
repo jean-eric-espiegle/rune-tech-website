@@ -26,7 +26,8 @@ useHead({
         <p>This page covers exactly what this site does today. It's short because the site itself is small.</p>
 
         <h3>What we collect</h3>
-        <p>The only personal data this site collects is what you submit through the inquiry form: your name, email address, and message. There are no cookies, no analytics, and no third-party trackers on this site.</p>
+        <p>The only personal data this site collects is what you submit through the inquiry form: your name, email address, and message. There are no cookies and no third-party trackers on this site.</p>
+        <p>We use Cloudflare Web Analytics to see aggregate traffic (page views, rough visitor counts). It's cookie-free and doesn't track you individually or across other sites — it just counts visits.</p>
         <p>Your colour theme preference (light or dark) is stored in your own browser's local storage. It never leaves your device and is never sent to us.</p>
 
         <h3>How we use it</h3>
@@ -35,6 +36,7 @@ useHead({
         <h3>Who processes it</h3>
         <ul>
           <li><strong>Netlify</strong> hosts this site and processes form submissions in transit.</li>
+          <li><strong>Cloudflare</strong> provides DNS and the cookie-free web analytics mentioned above.</li>
           <li><strong>Resend</strong> delivers our email reply to you.</li>
           <li>Your inquiry is stored in our own internal systems so we can find and respond to it.</li>
         </ul>

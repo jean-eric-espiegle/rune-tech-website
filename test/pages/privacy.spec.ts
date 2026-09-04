@@ -8,6 +8,7 @@ describe('pages/privacy', () => {
 
     expect(wrapper.find('h2').text()).toBe('Privacy Policy')
     expect(wrapper.text()).toContain('Netlify')
+    expect(wrapper.text()).toContain('Cloudflare')
     expect(wrapper.text()).toContain('Resend')
     expect(wrapper.findAll('a[href="mailto:inquiries@rune-tech.org"]').length).toBeGreaterThan(0)
   })
