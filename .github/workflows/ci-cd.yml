@@ -12,7 +12,7 @@ on:
 
 jobs:
   test:
-    name: Lint, typecheck, and build
+    name: Lint, typecheck, test, and build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,6 +32,20 @@ jobs:
 
       - name: Typecheck
         run: pnpm run typecheck
+
+      # Fails the job itself if statement/branch/function/line coverage
+      # drops below 95% — see thresholds in vitest.config.ts. No external
+      # coverage service; the failure comes straight from vitest.
+      - name: Unit tests with coverage
+        run: pnpm run test:coverage
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 14
 
       - name: Build
         run: pnpm run generate

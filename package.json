@@ -2,7 +2,7 @@
   "name": "rune-tech-website",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@11.22.0+sha256.57a97e6f23a3faffc03153a4ef8c770a0552612b8640aebe39bfdd5754d0ebdc",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,7 +10,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "nuxt": "^4.5.2",
@@ -19,8 +21,13 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.17.0",
+    "@nuxt/test-utils": "^4.2.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "@vue/test-utils": "^2.5.0",
     "eslint": "^10.9.1",
+    "happy-dom": "^20.13.2",
     "typescript": "^6.0.3",
+    "vitest": "^4.1.11",
     "vue-tsc": "^3.3.11"
   }
 }
