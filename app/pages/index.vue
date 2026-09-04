@@ -45,6 +45,21 @@ useHead({
             provider: { '@id': `${siteUrl}/#organization` }
           },
           {
+            '@type': 'SoftwareApplication',
+            name: 'Image Optimization API',
+            url: 'https://image-optimization-api.fly.dev',
+            applicationCategory: 'DeveloperApplication',
+            operatingSystem: 'Any',
+            description: 'Resize, convert, compress, and smart-crop images behind one clean REST API. Billed by MB processed, a generous free tier, four endpoints that do exactly what they say.',
+            offers: [
+              { '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD', description: '500MB processed/month, no card required.' },
+              { '@type': 'Offer', name: 'Starter', price: '9', priceCurrency: 'USD', description: '5,000MB processed/month, then $0.005/MB.' },
+              { '@type': 'Offer', name: 'Pro', price: '29', priceCurrency: 'USD', description: '25,000MB processed/month, then $0.005/MB.' },
+              { '@type': 'Offer', name: 'Scale', price: '99', priceCurrency: 'USD', description: '100,000MB processed/month, then $0.005/MB.' }
+            ],
+            provider: { '@id': `${siteUrl}/#organization` }
+          },
+          {
             '@type': 'FAQPage',
             mainEntity: [
               {
@@ -59,8 +74,8 @@ useHead({
               },
               {
                 '@type': 'Question',
-                name: "What's the first product?",
-                acceptedAnswer: { '@type': 'Answer', text: 'PDF Toolkit API: merge, split, compress, and rasterize PDFs through one REST API. Free tier is 100 operations/month with no card required; paid tiers start at $9/month.' }
+                name: 'What products does Rune Tech have?',
+                acceptedAnswer: { '@type': 'Answer', text: 'PDF Toolkit API (merge, split, compress, and rasterize PDFs) and Image Optimization API (resize, convert, compress, and smart-crop images), each a standalone REST API with a free tier and no card required to start.' }
               },
               {
                 '@type': 'Question',
@@ -187,6 +202,26 @@ async function submitInquiry(event: Event) {
             <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 10 L10 6 M6 6 L10 6 L10 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </a>
         </div>
+        <div class="tablet">
+          <svg class="tablet-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="4" y="6" width="24" height="20" rx="1.5" stroke="currentColor" stroke-width="1.6" />
+            <circle cx="11" cy="13" r="2.2" stroke="currentColor" stroke-width="1.4" />
+            <path d="M6 23 L13 16 L18 21 L22 17 L26 21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div>
+            <div class="tablet-meta">Live &middot; est. 2026</div>
+            <h3>Image Optimization API</h3>
+          </div>
+          <p>Resize, convert, compress, and smart-crop images behind one clean REST API. Billed by MB processed, not a confusing credit system.</p>
+          <p class="tablet-pricing">Free: 500MB/mo, no card &middot; Starter $9/mo &middot; Pro $29/mo &middot; Scale $99/mo</p>
+          <pre class="code-sample"><code>curl -X POST https://image-optimization-api.fly.dev/v1/resize \
+  -H "x-api-key: YOUR_KEY" \
+  -F "file=@photo.jpg" -F "width=800"</code></pre>
+          <a class="tablet-link" href="https://image-optimization-api.fly.dev" target="_blank" rel="noopener">
+            Visit Image Optimization API
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 10 L10 6 M6 6 L10 6 L10 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </a>
+        </div>
         <div class="tablet-empty">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4 L12 20 M4 12 L20 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" /></svg>
           The next tool is being drawn up.
@@ -212,8 +247,8 @@ async function submitInquiry(event: Event) {
           <p>Rune Tech is built and run by Jean-Eric Espiegle, a solo developer building the tools they wished already existed. More on <NuxtLink to="/about">the About page</NuxtLink>.</p>
         </div>
         <div class="faq-item">
-          <h3>What's the first product?</h3>
-          <p>PDF Toolkit API: merge, split, compress, and rasterize PDFs through one REST API. Free tier is 100 operations/month with no card required; paid tiers start at $9/month.</p>
+          <h3>What products does Rune Tech have?</h3>
+          <p>PDF Toolkit API (merge, split, compress, and rasterize PDFs) and Image Optimization API (resize, convert, compress, and smart-crop images), each a standalone REST API with a free tier and no card required to start.</p>
         </div>
         <div class="faq-item">
           <h3>How do I get in touch?</h3>

@@ -20,6 +20,12 @@ const entries = [
   {
     date: '2026-09-04',
     label: '4 September 2026',
+    title: 'Image Optimization API launches',
+    body: 'The second Rune Tech product: resize, convert, compress, and smart-crop images behind one clean REST API. Same shape as PDF Toolkit API, billed by MB processed instead of by operation.'
+  },
+  {
+    date: '2026-09-04',
+    label: '4 September 2026',
     title: 'Content and SEO groundwork',
     body: 'Added real pricing and a curl example to the PDF Toolkit API listing, an About page, an FAQ, and a Privacy Policy. Underneath: structured data, a sitemap, and an llms.txt so the site is easier for both search and AI engines to read correctly.'
   },
@@ -49,7 +55,7 @@ const entries = [
         <h2>Changelog</h2>
       </div>
       <div class="changelog-list">
-        <article v-for="entry in entries" :key="entry.date" class="changelog-item">
+        <article v-for="entry in entries" :key="entry.title" class="changelog-item">
           <time :datetime="entry.date" class="changelog-date">{{ entry.label }}</time>
           <h3>{{ entry.title }}</h3>
           <p>{{ entry.body }}</p>
