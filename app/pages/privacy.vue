@@ -7,7 +7,9 @@ useSeoMeta({
   ogType: 'website',
   ogTitle: 'Privacy Policy — Rune Tech',
   ogUrl: siteUrl,
-  twitterCard: 'summary'
+  ogImage: 'https://rune-tech.org/og-image.png',
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://rune-tech.org/og-image.png'
 })
 
 useHead({

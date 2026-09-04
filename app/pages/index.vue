@@ -8,7 +8,9 @@ useSeoMeta({
   ogTitle: 'Rune Tech',
   ogDescription: 'An arcane workshop for software. Small tools, deliberately built.',
   ogUrl: siteUrl,
-  twitterCard: 'summary'
+  ogImage: `${siteUrl}/og-image.png`,
+  twitterCard: 'summary_large_image',
+  twitterImage: `${siteUrl}/og-image.png`
 })
 
 useHead({

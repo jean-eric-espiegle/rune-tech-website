@@ -8,7 +8,9 @@ useSeoMeta({
   ogTitle: 'About — Rune Tech',
   ogDescription: 'One workshop, one craftsman. Small, dependable tools instead of sprawling platforms.',
   ogUrl: siteUrl,
-  twitterCard: 'summary'
+  ogImage: 'https://rune-tech.org/og-image.png',
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://rune-tech.org/og-image.png'
 })
 
 useHead({

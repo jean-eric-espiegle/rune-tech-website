@@ -53,10 +53,10 @@ generative engine optimization) provisions, plus a phased plan to address them.
 - [x] Fix duplicate font loading (drop the `@import`, keep `nuxt.config.ts`'s `<link>`)
 - [x] Add `manifest.webmanifest` (referencing the existing SVG favicon)
 - [x] Set a canonical URL + `ogUrl`
-- [ ] Add `ogImage`/`twitterImage` — **needs a designed 1200×630 PNG asset**, no image
-      tooling available in this environment to generate one
-- [ ] Add `favicon.ico` + `apple-touch-icon.png` — **needs raster exports of the existing
-      SVG mark**, same tooling gap as above
+- [x] Add `ogImage`/`twitterImage` — designed via a Claude Design canvas, exported and
+      wired in as `public/og-image.png` (1200×630) on every page
+- [x] Add `apple-touch-icon.png` (180×180) and a 360×360 PNG icon (for the manifest,
+      alongside the existing SVG favicon) — same canvas export
 
 ### Phase 2 — Content & trust
 - [x] Write real product content for PDF Toolkit API: concrete use cases, a code/curl

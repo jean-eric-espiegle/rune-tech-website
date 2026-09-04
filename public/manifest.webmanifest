@@ -11,6 +11,11 @@
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-360.png",
+      "sizes": "360x360",
+      "type": "image/png"
     }
   ]
 }
